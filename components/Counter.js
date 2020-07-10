@@ -10,5 +10,5 @@ export default function Counter(props) {
 }
 
 const styles = StyleSheet.create({
-  header: { fontSize: 50 },
+  header: { fontSize: 80 },
 });
