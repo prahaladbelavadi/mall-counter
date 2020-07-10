@@ -12,7 +12,12 @@ const windowWidth = Dimensions.get("window").width;
 
 export default function Gate(props) {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => {
+        props.press();
+      }}
+    >
       <Text style={styles.gateText}>{props.direction}</Text>
     </TouchableOpacity>
   );

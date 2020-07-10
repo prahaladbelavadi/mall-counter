@@ -4,7 +4,7 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Counter(props) {
   return (
     <View>
-      <Text style={styles.header}>This is a counter</Text>
+      <Text style={styles.header}>{props.count}</Text>
     </View>
   );
 }
