@@ -4,12 +4,18 @@ import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 // import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import Counter from "./components/Counter";
+import Gate from "./components/Gate";
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
+      <Gate direction="Entry" />
+
       <Counter />
-      <StatusBar style="auto" />
+
+      <Gate direction="Exit" />
+
+      {/* <StatusBar style="auto" /> */}
     </SafeAreaView>
   );
 }
