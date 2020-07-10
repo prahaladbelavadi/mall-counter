@@ -1,30 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 // import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import Counter from "./components/Counter";
 import Gate from "./components/Gate";
 
-incrementCounter = () => {
-  console.log(counter);
-  counter++;
-  console.log(counter);
-};
-
-decrementCounter = () => {
-  console.log("Dinc");
-  counter--;
-};
-
-let counter = 0;
+// let counter = 0;
 export default function App() {
-  console.log("count:" + counter);
+  let [count, setCounter] = useState(0);
+
+  incrementCounter = () => {
+    setCounter(count++);
+  };
+
+  decrementCounter = () => {
+    setCounter(count--);
+  };
 
   return (
     <SafeAreaView style={styles.container}>
       <Gate direction="Entry" press={incrementCounter} />
 
-      <Counter count={counter} />
+      <Counter count={count} />
 
       <Gate direction="Exit" press={decrementCounter} />
 
