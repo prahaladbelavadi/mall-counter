@@ -1,0 +1,12 @@
+{
+  "name": "mall-counter",
+  "displayName": "mall-counter",
+  "expo": {
+    "name": "mall-counter",
+    "slug": "expo-template-bare",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
