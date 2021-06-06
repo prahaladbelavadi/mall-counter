@@ -3,10 +3,14 @@
   "displayName": "mall-counter",
   "expo": {
     "name": "mall-counter",
-    "slug": "expo-template-bare",
+    "slug": "mall-template-app",
     "version": "1.0.0",
+    "icon": "./assets/mallcounter-logo.png",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.prahaladbelavad.malltemplateapp"
+    }
   }
 }
